@@ -1,0 +1,13 @@
+$black: #333;
+$white: #ccc;
+
+body {
+  background-color: $black;
+}
+
+.header {
+  .header-text {
+    font-size: 4em;
+    color: $white;
+  }
+}
