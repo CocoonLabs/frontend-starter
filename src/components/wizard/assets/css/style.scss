@@ -1,0 +1,154 @@
+// Container
+$font-family: 'Roboto', sans-serif;
+$wizard-width: 532px;
+$wizard-background: #fff;
+
+$header-color: #333;
+$step-active: #f35b3f;
+
+.wizard-container {
+	background: $wizard-background;
+	border-radius: 4px;
+	color: $header-color;
+	font-family: $font-family;
+	margin: auto;
+	padding: 25px;
+	max-width: $wizard-width;
+	width: 100%;
+}
+
+.wizard-form {
+	h3 {
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 5px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	p {
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	.wizard-progress {
+		position: absolute;
+		top: 24px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: #ddd;
+	}
+
+	.wizard-progress {
+		position: absolute;
+		top: 24px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: #ddd;
+	}
+
+	.wizard-progress-line {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 1px;
+		background: #f35b3f;
+	}
+
+	.wizard-steps {
+		margin-top: 20px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.wizard-step {
+		float: left;
+		position: relative;
+		text-transform: lowercase;
+	}
+
+	.wizard-step-icon {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		margin-top: 4px;
+		background: #ddd;
+		font-size: 16px;
+		color: #fff;
+		line-height: 40px;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+	}
+
+	.wizard-step.active {
+		.wizard-step-icon {
+			width: 48px;
+			height: 48px;
+			line-height: 48px;
+			font-size: 22px;
+			background: $step-active;
+			margin-top: 0;
+		}
+
+		p {
+			color: $step-active;
+		}
+	}
+
+	.wizard-step.activated {
+		.wizard-step-icon {
+			background: #fff;
+			border: 1px solid $step-active;
+			color: $step-active;
+			line-height: 38px;
+		}
+
+		p {
+			color: $step-active;
+		}
+	}
+
+	.wizard-button {
+	text-align: right;
+	}
+
+	.btn {
+		min-width: 105px;
+		height: 40px;
+		margin: 0;
+		padding: 0 20px;
+		vertical-align: middle;
+		border: 0;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 40px;
+		color: #fff;
+		cursor: pointer;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		text-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-o-transition: all .3s;
+		-moz-transition: all .3s;
+		-webkit-transition: all .3s;
+		-ms-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.btn:hover {
+		opacity: .7;
+	}
+
+	.btn-next {
+		background: $step-active;
+	}
+
+}
